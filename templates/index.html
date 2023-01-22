@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}BRKCLD-1973{% endblock %}
+
+{% block section1content %}
+
+<html>
+   <body>
+     <main>
+        <div class="px-4 py-4 text-center">
+            <h2 class="display-6 fw-bold text-primary">The Cloud in Your Basement</h2>
+            <h5 class="display-6 fw-bold text-primary">Turn Your Data Center into the Experience Your Developers want to Use</h5>
+            <img src="{{ url_for('static', filename='assets/img/CLEUR.gif') }}" alt="CLEUR GIF" />
+            <p></p>
+            <button class="btn" onclick="window.open('{{ 'https://github.com/jara-o/BRKCLD-1973' }}','_blank')" style="padding: 2px 40px 3px 40px;line-height:30px">
+              Find this session's code on GitHub!
+              <img src="{{ url_for('static', filename='assets/img/github.svg') }}" alt="GitHub Logo" width="25" height="25" style="vertical-align: middle;"/>
+            </button>
+          </div>
+     </main>      
+   </body>
+</html>
+
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
